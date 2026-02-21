@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Weather App</title>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div class="site-branding">
+				<h1>Weather App</h1>
+			</div>
+			<nav aria-label="Main navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Forecast</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section id="search" aria-labelledby="search-heading">
+				<h2 id="search-heading">Search</h2>
+				<form id="search-form" role="search">
+					<label for="location">Location</label>
+					<input id="location" name="location" type="search" placeholder="Enter city or ZIP">
+					<button type="submit">Get Weather</button>
+				</form>
+			</section>
+
+			<section id="current-weather" aria-live="polite">
+				<h2>Current Weather</h2>
+				<article id="weather-card">
+					<!-- Weather details will be inserted here -->
+				</article>
+			</section>
+
+			<aside>
+				<h2>Details</h2>
+				<p>Additional information and links.</p>
+			</aside>
+		</main>
+
+		<footer>
+			<p>&copy; 2026 Weather App</p>
+		</footer>
+	</body>
+</html>
