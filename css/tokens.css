@@ -1,0 +1,33 @@
+:root {
+    --primary-bg-color: #222831;
+    --primary-text-color: #FFFFFF;
+    --secondary-bg-color: #90D9E0;
+    --secondary-text-color: #222831;
+
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    --heading-font: var(--font-montserrat);
+
+    /* Font family */
+    --font-montserrat: 'Montserrat', sans-serif;
+
+    /* Font sizes */
+    --font-h1-size: 50px;
+    --font-h2-size: 37px;
+    --font-h3-size: 28px;
+
+    --font-body1-size: 22px;
+    --font-body2-size: 20px;
+
+    /* Border Radius */
+    --radius-small: 10px;
+    --radius-medium: 25px;
+    --radius-large: 30px;
+
+    /* Border Radius */
+    --border-round-day-panel: var(--border-radius-30);
+    --border-round-day-forecast-panel: var(--border-radius-30);
+    --border-radius-day-details: var(--border-radius-10);
+
+
+}
