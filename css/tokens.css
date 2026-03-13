@@ -27,9 +27,5 @@
     --radius-medium: 25px;
     --radius-large: 30px;
 
-    /* Border Radius */
---border-round-day-panel: var(--radius-large);
---border-round-day-forecast-panel: var(--radius-large);
---border-radius-day-details: var(--radius-small);
 
 }

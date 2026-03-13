@@ -77,3 +77,72 @@ body {
     flex-direction: column;
     gap: 25px;
 }    
+
+/* Creates a 2-column grid. The first column is flexible, the second is just enough for the side widgets. */
+.widgets-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Extracted approximate width from Figma */
+    gap: 30px; /* Use the gap variable from your design system */
+}
+
+/* Forces the sunset and uv index cards to stack vertically */
+.side-widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- SAATLİK TAHMİNLER (HOURLY FORECAST) YAN YANA HİZALAMA --- */
+
+.hourly-forecast ul {
+    display: flex; /* Liste elemanlarını yan yana dizer */
+    background-color: #2A2F3A; /* Koyu gri arka plan */
+    border-radius: var(--radius-medium); /* Köşeleri yuvarlatır */
+    margin-bottom: 30px; /* Altındaki widget'lar ile arasına boşluk bırakır */
+    padding: 0;
+}
+
+.hourly-forecast li {
+    display: flex;
+    flex-direction: column; /* İçindeki yazıları (Saat, İkon, Sıcaklık) alt alta dizer */
+    align-items: center; /* Ortalar */
+    justify-content: center;
+    flex: 1; /* Tüm kutucukların eşit genişlikte olmasını sağlar */
+    padding: 20px 10px;
+    gap: 15px; /* Yazılar arasına boşluk ekler */
+}
+
+/* İlk sıradaki 'Now' (Aktif) kartının beyaz görünümü */
+.hourly-forecast li.active {
+    background-color: #FFFFFF;
+    color: #222831; /* İçindeki yazı rengini koyu yapar */
+    border-radius: var(--radius-medium); /* Sadece bu beyaz karta özel köşe yuvarlatması */
+}
+
+/* --- 4 GÜNLÜK TAHMİN (DAILY FORECAST) YAN YANA HİZALAMA --- */
+
+.daily-forecast ul {
+    display: flex; /* Liste elemanlarını yan yana dizer */
+    background-color: #FFFFFF; /* Beyaz arka plan */
+    border-radius: var(--radius-medium); /* Köşeleri yuvarlatır */
+    padding: 0;
+    justify-content: space-around; /* Elemanları aralarında eşit boşlukla yayar */
+}
+
+.daily-forecast li {
+    display: flex;
+    flex-direction: column; /* İçindeki yazıları (Gün, İkon, Sıcaklık) alt alta dizer */
+    align-items: center; /* Ortalar */
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 15px; /* Yazılar arasına boşluk ekler */
+    flex: 1; /* Tüm kutucukların eşit genişlikte olmasını sağlar */
+    color: #222831; /* İçindeki yazı rengini koyu yapar (beyaz arka plan üzerinde) */
+}
+
+/* Aktif (Tue) kartının özel görünümü - Arka planı koyu, yazıyı beyaz yapalım */
+.daily-forecast li.active {
+    background-color: #2A2F3A;
+    color: #FFFFFF;
+    border-radius: var(--radius-medium); /* Sadece bu karta özel köşe yuvarlatması */
+}
