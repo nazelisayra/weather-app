@@ -4,12 +4,15 @@
     --secondary-bg-color: #90D9E0;
     --secondary-text-color: #222831;
 
-    --font-montserrat: 'Montserrat', sans-serif;
 
-    --heading-font: var(--font-montserrat);
+    --heading-font: var(--font-family-montserrat);
+    --heading-font-size: var(--font-h2-size);
+
+
+
 
     /* Font family */
-    --font-montserrat: 'Montserrat', sans-serif;
+    --font-family-montserrat: 'Montserrat', sans-serif;
 
     /* Font sizes */
     --font-h1-size: 50px;
@@ -25,9 +28,8 @@
     --radius-large: 30px;
 
     /* Border Radius */
-    --border-round-day-panel: var(--border-radius-30);
-    --border-round-day-forecast-panel: var(--border-radius-30);
-    --border-radius-day-details: var(--border-radius-10);
-
+--border-round-day-panel: var(--radius-large);
+--border-round-day-forecast-panel: var(--radius-large);
+--border-radius-day-details: var(--radius-small);
 
 }

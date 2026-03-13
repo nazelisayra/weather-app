@@ -1,50 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Weather App</title>
-		<link rel="stylesheet" href="css/styles.css">
-	</head>
-	<body>
-		<header>
-			<div class="site-branding">
-				<h1>Weather App</h1>
-			</div>
-			<nav aria-label="Main navigation">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Forecast</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-		<main>
-			<section id="search" aria-labelledby="search-heading">
-				<h2 id="search-heading">Search</h2>
-				<form id="search-form" role="search">
-					<label for="location">Location</label>
-					<input id="location" name="location" type="search" placeholder="Enter city or ZIP">
-					<button type="submit">Get Weather</button>
-				</form>
-			</section>
+<main class="weather-dashboard">
+    <section class="dashboard-top">
+        
+        <article class="current-weather-hero">
+            <header>
+                <h1 class="heading">Monday</h1>
+                <time datetime="2026-06-20">20 Jun 2026</time>
+                <div class="location">
+                    <span class="icon-pin" aria-hidden="true">📍</span> New York, NY
+                </div>
+            </header>
+            
+            <div class="weather-main">
+                <div class="weather-icon" aria-label="Sunny">☀️</div>
+                <div class="temperature">
+                    <h2 class="heading">29°C</h2>
+                    <p>Sunny</p>
+                </div>
+                <div class="temperature-range">
+                    <p>Max: 30°C Min: 19°C</p>
+                </div>
+            </div>
+        </article>
 
-			<section id="current-weather" aria-live="polite">
-				<h2>Current Weather</h2>
-				<article id="weather-card">
-					<!-- Weather details will be inserted here -->
-				</article>
-			</section>
+        <aside class="weather-sidebar">
+            <ul class="weather-conditions" aria-label="Current conditions details">
+                <li>
+                    <span class="label">Precipitation</span>
+                    <span class="value">0%</span>
+                </li>
+                <li>
+                    <span class="label">Humidity</span>
+                    <span class="value">42%</span>
+                </li>
+                <li>
+                    <span class="label">Wind</span>
+                    <span class="value">3 km/h</span>
+                </li>
+            </ul>
 
-			<aside>
-				<h2>Details</h2>
-				<p>Additional information and links.</p>
-			</aside>
-		</main>
+            <nav class="daily-forecast" aria-label="4-Day Forecast">
+                <ul>
+                    <li class="active">
+                        <span class="day">Tue</span>
+                        <span class="icon" aria-label="Sunny">☀️</span>
+                        <span class="temp">30°C</span>
+                    </li>
+                    <li>
+                        <span class="day">Wed</span>
+                        <span class="icon" aria-label="Partly Cloudy">⛅</span>
+                        <span class="temp">22°C</span>
+                    </li>
+                    <li>
+                        <span class="day">Thu</span>
+                        <span class="icon" aria-label="Rain">🌧️</span>
+                        <span class="temp">12°C</span>
+                    </li>
+                    <li>
+                        <span class="day">Fri</span>
+                        <span class="icon" aria-label="Sunny">☀️</span>
+                        <span class="temp">26°C</span>
+                    </li>
+                </ul>
+            </nav>
 
-		<footer>
-			<p>&copy; 2026 Weather App</p>
-		</footer>
-	</body>
+            <button class="btn-location">
+                <span class="icon-pin" aria-hidden="true">📍</span> New York City
+            </button>
+        </aside>
+
+    </section>
+
+    <section class="dashboard-bottom">
+        
+        <header class="bottom-header">
+            <h2 class="heading">Monday</h2>
+            <time datetime="2026-06-20">20 Jun 2026</time>
+        </header>
+
+        <section class="hourly-forecast" aria-label="Hourly Forecast">
+            <ul>
+                <li class="active">
+                    <span class="time">Now</span>
+                    <span class="icon" aria-label="Sunny">☀️</span>
+                    <span class="temp">30°C</span>
+                </li>
+                <li>
+                    <span class="time">17</span>
+                    <span class="icon" aria-label="Partly Cloudy">⛅</span>
+                    <span class="temp">22°C</span>
+                </li>
+                <li>
+                    <span class="time">18</span>
+                    <span class="icon" aria-label="Sunny">☀️</span>
+                    <span class="temp">12°C</span>
+                </li>
+                <li>
+                    <span class="time">18:20</span>
+                    <span class="icon" aria-label="Sunny">☀️</span>
+                    <span class="temp">26°C</span>
+                </li>
+                <li>
+                    <span class="time">19</span>
+                    <span class="icon" aria-label="Partly Cloudy">⛅</span>
+                    <span class="temp">22°C</span>
+                </li>
+                <li>
+                    <span class="time">20</span>
+                    <span class="icon" aria-label="Rain">🌧️</span>
+                    <span class="temp">12°C</span>
+                </li>
+                <li>
+                    <span class="time">21</span>
+                    <span class="icon" aria-label="Rain">🌧️</span>
+                    <span class="temp">26°C</span>
+                </li>
+            </ul>
+        </section>
+
+        <div class="widgets-grid">
+            
+            <article class="widget aqi-widget">
+                <h3 class="heading">Air Quality</h3>
+                <div class="aqi-value">
+                    <span class="number">43</span>
+                    <span class="status">Good</span>
+                </div>
+                <meter value="43" min="0" max="500" optimum="25" high="100" aria-label="Air Quality Index"></meter>
+                <p class="description">Air quality index is 43, which is similar to yesterday at about this time</p>
+            </article>
+
+            <div class="side-widgets">
+                <article class="widget sunset-widget">
+                    <h3 class="heading"><span class="icon-sun" aria-hidden="true">☀️</span> Sunset</h3>
+                    <p class="time-main">6:20 PM</p>
+                    <p class="time-sub">Sunrise: 6:50 AM</p>
+                </article>
+
+                <article class="widget uv-widget">
+                    <h3 class="heading"><span class="icon-uv" aria-hidden="true">☀️</span> UV Index</h3>
+                    <div class="uv-value">
+                        <span class="number">4</span>
+                        <span class="status">Moderate</span>
+                    </div>
+                </article>
+            </div>
+            
+        </div>
+    </section>
+</main>
+
+</body>
 </html>

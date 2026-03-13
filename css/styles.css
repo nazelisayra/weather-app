@@ -1,3 +1,79 @@
+
+/* Removes default bullet points from all lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 1. Master Container */
+.weather-dashboard {
+    max-width: 900px; /* Keeps your app centered and sized correctly */
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 2. Top Section Layout (Side by Side) */
+.dashboard-top {
+    display: flex;
+    gap: 20px;
+}
+
+/* 3. Left Hero Panel (Monday, 29°C) */
+.current-weather-hero {
+    flex: 1; /* Takes up half the space */
+    min-height: 400px;
+    
+    /* Applies your gradient and background image */
+    background: linear-gradient(180deg, rgba(136, 235, 239, 0.8) 0%, rgba(83, 91, 230, 0.8) 100%), url('../images/BG-Image.png');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: var(--border-round-day-panel);
+    padding: 30px;
+    
+    /* Pushes header to top and temp to bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* 4. Right Sidebar (Precipitation, 4-Day Forecast) */
+.weather-sidebar {
+    flex: 1; /* Takes up the other half of the space */
+    background-color: var(--primary-bg-color); /* Dark background */
+    border-radius: var(--border-round-day-panel);
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body {
+        font-family: var(--font-family-montserrat);
+        font-size: var(--font-body1-size);
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+    }
+
 .heading {
         font-family: var(--heading-font);
+        font-size: var(--heading-font-size);
     }
+
+/* 5. Bottom Section Layout */
+.dashboard-bottom {
+    background: linear-gradient(180deg, rgba(136, 235, 239, 0.8) 0%, rgba(83, 91, 230, 0.8) 100%), url('../images/BG-Image.png');
+    background-size: cover;
+    background-position: center;
+    
+    border-radius: var(--border-round-day-panel);
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}    
