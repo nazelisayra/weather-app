@@ -80,7 +80,7 @@
                 </ul>
             </nav>
 
-            <button class="btn-location">
+            <button class="location-btn">
                 <span class="icon-pin" aria-hidden="true">📍</span> New York City
             </button>
         </aside>
@@ -94,48 +94,54 @@
             <time datetime="2026-06-20">20 Jun 2026</time>
         </header>
 
-        <section class="hourly-forecast" aria-label="Hourly Forecast">
-            <ul>
-                <li class="active">
-                    <span class="time">Now</span>
-                    <span class="icon" aria-label="Sunny">☀️</span>
-                    <span class="temp">30°C</span>
-                </li>
-                <li>
-                    <span class="time">17</span>
-                    <span class="icon" aria-label="Partly Cloudy">⛅</span>
-                    <span class="temp">22°C</span>
-                </li>
-                <li>
-                    <span class="time">18</span>
-                    <span class="icon" aria-label="Sunny">☀️</span>
-                    <span class="temp">12°C</span>
-                </li>
-                <li>
-                    <span class="time">18:20</span>
-                    <span class="icon" aria-label="Sunny">☀️</span>
-                    <span class="temp">26°C</span>
-                </li>
-                <li>
-                    <span class="time">19</span>
-                    <span class="icon" aria-label="Partly Cloudy">⛅</span>
-                    <span class="temp">22°C</span>
-                </li>
-                <li>
-                    <span class="time">20</span>
-                    <span class="icon" aria-label="Rain">🌧️</span>
-                    <span class="temp">12°C</span>
-                </li>
-                <li>
-                    <span class="time">21</span>
-                    <span class="icon" aria-label="Rain">🌧️</span>
-                    <span class="temp">26°C</span>
-                </li>
-            </ul>
-        </section>
-
         <div class="widgets-grid">
-            
+
+            <section class="hourly-forecast" aria-label="Hourly Forecast">
+                <ul>
+                    <li class="active">
+                        <span class="time">Now</span>
+                        <span class="icon" aria-label="Sunny">☀️</span>
+                        <span class="temp">30°C</span>
+                    </li>
+                    <li>
+                        <span class="time">17</span>
+                        <span class="icon" aria-label="Partly Cloudy">⛅</span>
+                        <span class="temp">22°C</span>
+                    </li>
+                    <li>
+                        <span class="time">18</span>
+                        <span class="icon" aria-label="Sunny">☀️</span>
+                        <span class="temp">12°C</span>
+                    </li>
+                    <li>
+                        <span class="time">18:20</span>
+                        <span class="icon" aria-label="Sunny">☀️</span>
+                        <span class="temp">26°C</span>
+                    </li>
+                    <li>
+                        <span class="time">19</span>
+                        <span class="icon" aria-label="Partly Cloudy">⛅</span>
+                        <span class="temp">22°C</span>
+                    </li>
+                    <li>
+                        <span class="time">20</span>
+                        <span class="icon" aria-label="Rain">🌧️</span>
+                        <span class="temp">12°C</span>
+                    </li>
+                    <li>
+                        <span class="time">21</span>
+                        <span class="icon" aria-label="Rain">🌧️</span>
+                        <span class="temp">26°C</span>
+                    </li>
+                </ul>
+            </section>
+
+            <article class="widget sunset-widget">
+                <h3 class="heading"><span class="icon-sun" aria-hidden="true">☀️</span> Sunset</h3>
+                <p class="time-main">6:20 PM</p>
+                <p class="time-sub">Sunrise: 6:50 AM</p>
+            </article>
+
             <article class="widget aqi-widget">
                 <h3 class="heading">Air Quality</h3>
                 <div class="aqi-value">
@@ -146,22 +152,14 @@
                 <p class="description">Air quality index is 43, which is similar to yesterday at about this time</p>
             </article>
 
-            <div class="side-widgets">
-                <article class="widget sunset-widget">
-                    <h3 class="heading"><span class="icon-sun" aria-hidden="true">☀️</span> Sunset</h3>
-                    <p class="time-main">6:20 PM</p>
-                    <p class="time-sub">Sunrise: 6:50 AM</p>
-                </article>
+            <article class="widget uv-widget">
+                <h3 class="heading"><span class="icon-uv" aria-hidden="true">☀️</span> UV Index</h3>
+                <div class="uv-value">
+                    <span class="number">4</span>
+                    <span class="status">Moderate</span>
+                </div>
+            </article>
 
-                <article class="widget uv-widget">
-                    <h3 class="heading"><span class="icon-uv" aria-hidden="true">☀️</span> UV Index</h3>
-                    <div class="uv-value">
-                        <span class="number">4</span>
-                        <span class="status">Moderate</span>
-                    </div>
-                </article>
-            </div>
-            
         </div>
     </section>
 </main>
